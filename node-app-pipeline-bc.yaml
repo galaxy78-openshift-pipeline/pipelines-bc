@@ -1,0 +1,17 @@
+kind: BuildConfig
+apiVersion: v1
+metadata:
+  name: nodeapp-pipeline
+  labels:
+    app: nodeapp-pipeline
+spec:
+  source:
+    git:
+      ref: "custom-pipeline"
+      uri: "https://github.com/galaxy78r/DO288-apps.git"
+    type: Git
+    "contextDir": "books"
+  strategy:
+    type: JenkinsPipeline
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: jenkins/jenkinsfile 

@@ -1,0 +1,17 @@
+kind: BuildConfig
+apiVersion: v1
+metadata:
+  name: java-pipeline
+  labels:
+    app: java-pipeline
+spec:
+  source:
+    git:
+      ref: "main"
+      uri: "https://github.com/galaxy78r/openshift-pipeline-apps.git"
+    type: Git
+    "contextDir": "java"
+  strategy:
+    type: JenkinsPipeline
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: jenkins/jenkinsfile 
