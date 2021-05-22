@@ -7,10 +7,9 @@ metadata:
 spec:
   source:
     git:
-      ref: "main"
-      uri: "https://github.com/galaxy78r/openshift-pipeline-apps.git"
+      ref: "master"
+      uri: "https://github.com/galaxy78-openshift-pipeline/java1-app.git"
     type: Git
-    "contextDir": "java"
   strategy:
     type: JenkinsPipeline
     jenkinsPipelineStrategy:

@@ -8,9 +8,8 @@ spec:
   source:
     git:
       ref: "custom-pipeline"
-      uri: "https://github.com/galaxy78r/DO288-apps.git"
+      uri: "https://github.com/galaxy78-openshift-pipeline/nodejs1-app.git"
     type: Git
-    "contextDir": "books"
   strategy:
     type: JenkinsPipeline
     jenkinsPipelineStrategy:
