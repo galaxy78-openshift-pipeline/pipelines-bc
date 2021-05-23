@@ -1,0 +1,16 @@
+kind: BuildConfig
+apiVersion: v1
+metadata:
+  name: movies-pipeline
+  labels:
+    app: movies-pipeline
+spec:
+  source:
+    git:
+      ref: "master"
+      uri: "https://github.com/galaxy78-openshift-pipeline/movies.git"
+    type: Git
+  strategy:
+    type: JenkinsPipeline
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: Jenkinsfile

@@ -13,4 +13,4 @@ spec:
   strategy:
     type: JenkinsPipeline
     jenkinsPipelineStrategy:
-      jenkinsfilePath: jenkins/jenkinsfile 
+      jenkinsfilePath: jenkins/Jenkinsfile 
